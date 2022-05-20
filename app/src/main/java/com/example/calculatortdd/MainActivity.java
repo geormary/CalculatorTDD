@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.but7).setOnClickListener(e -> press("7"));
         findViewById(R.id.but8).setOnClickListener(e -> press("8"));
         findViewById(R.id.but9).setOnClickListener(e -> press("9"));
-        findViewById(R.id.butadd).setOnClickListener(e -> press("+"));
+        findViewById(R.id.butmult).setOnClickListener(e -> press("*"));
         findViewById(R.id.butminus).setOnClickListener(e -> press("-"));
         findViewById(R.id.butdivide).setOnClickListener(e -> press("/"));
-        findViewById(R.id.butmult).setOnClickListener(e -> press("*"));
+        findViewById(R.id.butadd).setOnClickListener(e -> press("+"));
         findViewById(R.id.butequals).setOnClickListener(e -> press("="));
         findViewById(R.id.butclear).setOnClickListener(e -> press("c"));
 

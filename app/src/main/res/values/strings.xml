@@ -11,12 +11,12 @@
     <string name ="eight">8</string>
     <string name ="nine">9</string>
 
-    <string name ="clear">C</string>
+    <string name="clear">c</string>
     <string name ="equals">=</string>
     <string name ="add">+</string>
     <string name="subtract">-</string>
     <string name="divide">÷</string>
     <string name ="multiply">x</string>
-    <string name = "display"> Enter a value</string>
+    <string name="display"> 0 </string>
     <string name="backspace"></string>
 </resources>
