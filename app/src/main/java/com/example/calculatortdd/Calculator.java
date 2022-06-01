@@ -42,19 +42,22 @@ public class Calculator {
     private void calculate(String operator) {
         switch (operator) {
             case "+":
-                display = String.valueOf(Integer.parseInt(previousDisplay) + Integer.parseInt(display));
+                display = String.valueOf(Double.parseDouble(previousDisplay) + Double.parseDouble(display));
                 break;
             case "-":
-                display = String.valueOf(Integer.parseInt(previousDisplay) - Integer.parseInt(display));
+                display = String.valueOf(Double.parseDouble(previousDisplay) - Double.parseDouble(display));
                 break;
             case "*":
-                display = String.valueOf(Integer.parseInt(previousDisplay) * Integer.parseInt(display));
+                display = String.valueOf(Double.parseDouble(previousDisplay) * Double.parseDouble(display));
                 break;
             case "/":
-                display = String.valueOf(Integer.parseInt(previousDisplay) / Integer.parseInt(display));
+                display = String.valueOf(Double.parseDouble(previousDisplay) / Double.parseDouble(display));
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + operator);
+        }
+        if (display.endsWith(".0")) {
+            display = display.substring(0, display.length() - 2);
         }
     }
 

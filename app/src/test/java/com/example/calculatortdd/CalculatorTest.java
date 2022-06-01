@@ -100,6 +100,7 @@ public class CalculatorTest extends TestCase {
         c.press("=");
         assertEquals("6", c.display);
     }
+
     @Test
     public void testClearDisplay() {
         Calculator c = new Calculator();
@@ -108,7 +109,23 @@ public class CalculatorTest extends TestCase {
         assertEquals("0", c.display);
     }
 
+    @Test
+    public void testTwoPointThreeDisplay() {
+        Calculator c = new Calculator();
+        c.press("2");
+        c.press(".");
+        c.press("3");
+        assertEquals("2.3", c.display);
+    }
 
-
+    @Test
+    public void testFiveDividedByTwoDisplay() {
+        Calculator c = new Calculator();
+        c.press("5");
+        c.press("/");
+        c.press("2");
+        c.press("=");
+        assertEquals("2.5", c.display);
+    }
 
 }
